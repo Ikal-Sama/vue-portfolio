@@ -6,6 +6,7 @@ import Banner from "@/components/Banner.vue";
 import Portfolio from "@/components/Portfolio.vue";
 import Testmonials from "@/components/Testimonials.vue";
 import Contacts from "@/components/Contacts.vue";
+import Footer from "@/components/Footer.vue";
 import { ref } from "vue";
 
 const contactSectionRef = ref(null);
@@ -47,5 +48,8 @@ const scrollToContact = () => {
   >
     <!-- About Section Content -->
     <Contacts />
+  </div>
+  <div class="mt-[15.5rem] lg:mt-[12rem]">
+    <Footer />
   </div>
 </template>

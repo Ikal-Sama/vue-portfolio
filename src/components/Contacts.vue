@@ -1,10 +1,8 @@
 <template>
-  <div class="bg-black py-5">
+  <div class="bg-black/5 py-5">
     <SectionTitle class="">
-      <h1 class="font-extrabold text-3xl lg:text-5xl text-white">
-        Get in Touch
-      </h1>
-      <p class="font-normal text-xl text-gray-400 mt-5">
+      <h1 class="font-extrabold text-3xl lg:text-5xl">Get in Touch</h1>
+      <p class="font-normal text-xl text-gray-600 mt-5">
         Feel free to contact me anytime
       </p>
 
