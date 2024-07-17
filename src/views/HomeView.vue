@@ -6,6 +6,13 @@ import Banner from "@/components/Banner.vue";
 import Portfolio from "@/components/Portfolio.vue";
 import Testmonials from "@/components/Testimonials.vue";
 import Contacts from "@/components/Contacts.vue";
+import { ref } from "vue";
+
+const contactSectionRef = ref(null);
+
+const scrollToContact = () => {
+  contactSectionRef.value.scrollIntoView({ behavior: "smooth" });
+};
 </script>
 
 <template>
@@ -13,27 +20,31 @@ import Contacts from "@/components/Contacts.vue";
     <!-- About Section Content -->
     <Hero />
   </div>
-  <div class="h-full py-5" id="about">
+  <div class="h-full" id="about">
     <!-- About Section Content -->
     <About />
   </div>
-  <div class="h-full py-5 lg:mt-0 md:mt-[57rem] mt-[80rem]" id="services">
+  <div class="h-full py-5 lg:mt-[10rem] md:mt-[57rem] mt-[60rem]" id="services">
     <!-- Services Section Content -->
     <Services />
   </div>
-  <div class="py-5 mt-[130rem] md:mt-[115rem] lg:mt-[15rem]">
-    <Banner />
+  <div class="py-5 mt-[135rem] md:mt-[115rem] lg:mt-[28rem]">
+    <Banner @scroll-to-contact="scrollToContact" />
   </div>
-  <div class="h-full py-5 mt-28" id="portfolio">
+  <div class="h-full py-5 mt-16" id="portfolio">
     <Portfolio />
   </div>
   <div
-    class="h-full py-5 mt-[220rem] md:mt-[100rem] lg:mt-[58rem]"
+    class="h-full py-5 mt-[180rem] md:mt-[100rem] lg:mt-[58rem]"
     id="clients"
   >
     <Testmonials />
   </div>
-  <div class="h-full py-5 lg:mt-[8rem] md:mt-[20rem] mt-[28rem]" id="contacts">
+  <div
+    class="h-full py-5 lg:mt-[8rem] md:mt-[20rem] mt-[15rem]"
+    id="contacts"
+    ref="contactSectionRef"
+  >
     <!-- About Section Content -->
     <Contacts />
   </div>

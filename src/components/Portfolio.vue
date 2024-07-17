@@ -6,7 +6,7 @@
         Showcasing some of my best work
       </p>
 
-      <div class="mt-20">
+      <div class="mt-16">
         <PortfolioCard />
       </div>
     </SectionTitle>

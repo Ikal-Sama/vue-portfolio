@@ -48,9 +48,7 @@ const handleClick = (link) => {
 <template>
   <div class="flex w-screen h-screen">
     <div class="hidden lg:block">
-      <div
-        class="h-full w-[23em] bg-black p-4 py-10 flex flex-col items-center"
-      >
+      <div class="h-full w-[15em] bg-black p-4 py-8 flex flex-col items-center">
         <div class="text-white text-center flex flex-col items-center">
           <img
             :src="myimage"
@@ -62,8 +60,8 @@ const handleClick = (link) => {
             Available for work
           </p>
         </div>
-        <div class="mt-20">
-          <ul class="text-white flex flex-col gap-8 items-center">
+        <div class="mt-16">
+          <ul class="text-white flex flex-col gap-5 items-center">
             <li
               v-for="(link, index) in links"
               :key="index"

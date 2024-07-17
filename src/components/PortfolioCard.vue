@@ -1,7 +1,7 @@
 <template>
   <!-- Button Group for Filtering -->
   <div class="">
-    <div class="flex space-x-5 text-xl">
+    <div class="flex space-x-3 lg:space-x-5 text-md lg:text-xl">
       <button
         @click="setSelectedType('all')"
         :class="{ 'text-red-500': selectedType === 'all' }"
@@ -29,12 +29,12 @@
     </div>
 
     <!-- Display Filtered Designs -->
-    <transition-group name="fade" tag="div" class="flex flex-wrap gap-10 mt-10">
+    <transition-group name="fade" tag="div" class="flex flex-wrap gap-10 mt-8">
       <div v-for="design in filteredDesigns" :key="design.id" class="mb-4">
         <img
           :src="design.image"
           alt="service-images"
-          class="w-[20rem] h-[25rem] object-cover"
+          class="w-[16rem] h-[20rem] object-cover"
         />
       </div>
     </transition-group>
