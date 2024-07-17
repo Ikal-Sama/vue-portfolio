@@ -21,11 +21,11 @@ const scrollToContact = () => {
     <!-- About Section Content -->
     <Hero />
   </div>
-  <div class="h-full" id="about">
+  <div class="py-5 h-full" id="about">
     <!-- About Section Content -->
     <About />
   </div>
-  <div class="h-full py-5 lg:mt-[10rem] md:mt-[57rem] mt-[60rem]" id="services">
+  <div class="h-full py-5 lg:mt-[15rem] md:mt-[57rem] mt-[60rem]" id="services">
     <!-- Services Section Content -->
     <Services />
   </div>
@@ -36,7 +36,7 @@ const scrollToContact = () => {
     <Portfolio />
   </div>
   <div
-    class="h-full py-5 mt-[180rem] md:mt-[100rem] lg:mt-[58rem]"
+    class="h-full py-5 mt-[175rem] md:mt-[100rem] lg:mt-[58rem]"
     id="clients"
   >
     <Testmonials />

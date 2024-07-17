@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black/90 p-10 py-20 px-12 border-b border-gray-700">
     <div
-      class="grid grid-cols-1 gap-5 lg:grid-cols-3 items-center justify-center"
+      class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-3 items-center justify-center"
     >
       <div class="flex flex-row lg:flex-col items-center gap-5">
         <Map class="w-11 h-11 text-red-500" />

@@ -32,7 +32,7 @@ import myimage from "@/assets/2x2image.jpg";
           evolution helps me prioritize tasks, iterate fast and deliver faster.
         </p>
         <div class="border mt-4"></div>
-        <div class="mt-4 flex flex-col lg:flex-row justify-between">
+        <div class="mt-4 flex flex-col md:flex-row lg:flex-row justify-between">
           <div class="text-md lg:text-lg text-slate-700">
             <div class="flex gap-3">
               <h2>Name:</h2>
